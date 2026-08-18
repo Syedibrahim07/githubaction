@@ -19,8 +19,7 @@ jobs:
         run: |
           cat > app.py <<EOF
           name = "Arun"
-          age = "22"
-          print("Hello", name , age)
+          print("Hello", name)
           EOF
 
       - name: Run Python file
