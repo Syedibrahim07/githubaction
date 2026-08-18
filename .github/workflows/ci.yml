@@ -1,0 +1,22 @@
+name: MY GitHub Actions
+
+on:
+  push:
+
+  workflow_dispatch:
+
+  schedule:
+    - cron: '35 1 * * *'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello
+        run: echo "ibrahim"
+
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'

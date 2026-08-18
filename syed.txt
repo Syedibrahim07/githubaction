@@ -1,0 +1,3 @@
+echo -e "hello\nhow are you\nwhen"
+date
+

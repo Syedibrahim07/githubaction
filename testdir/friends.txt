@@ -1,0 +1,8 @@
+-rwx,r--,-w-
+one
+two
+three
+four 
+five 
+six 
+seven
