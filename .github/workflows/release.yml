@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  python:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,11 +17,9 @@ jobs:
 
       - name: python files
         run: |
-          cat > main.py << 'EOF'
+          cat << 'EOF' >main.py
           name : "Vijaykarthi"
           age : "22"
           print("Hello",name,age)
           EOF
-
-      - name: python code
-        run: python main.py
+          python main.py
