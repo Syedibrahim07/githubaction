@@ -17,7 +17,7 @@ jobs:
 
       - name: python files
         run: |
-          cat > main.py << EOF
+          cat > main.py << 'EOF'
           name : "Vijaykarthi"
           age : "22"
           print("Hello",name,age)
